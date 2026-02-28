@@ -86,7 +86,7 @@ def build_dataset():
             "Delegation": delegation_country if delegation_country else "",
             "Delegation_Criticalness": criticalness if criticalness else ""
         })
-
+    final_data.sort(key=lambda x: x["Date"], reverse=True)
     return final_data
 
 @app.route("/api")
