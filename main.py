@@ -101,6 +101,10 @@ def home():
 <html>
 <head>
     <title>Mumbai AQI vs Delegations</title>
+    <script>
+        window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+    </script>
+    <script defer src="/_vercel/insights/script.js"></script>
     <style>
         body {
             margin: 0;
