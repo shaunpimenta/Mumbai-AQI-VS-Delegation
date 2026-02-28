@@ -168,6 +168,25 @@ def home():
         .low { background: #2ed573; }
         .none { background: #57606f; }
 
+        .footer {
+    text-align: center;
+    padding: 15px 0;
+    background: rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(8px);
+    font-size: 14px;
+    letter-spacing: 0.5px;
+}
+
+.footer a {
+    color: #2ed573;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.footer a:hover {
+    color: #ffffff;
+}
     </style>
 </head>
 <body>
@@ -219,6 +238,14 @@ def home():
             {% endfor %}
         </table>
     </div>
+    <footer class="footer">
+    <div class="footer-content">
+        Built with curiosity & data • 
+        <a href="https://github.com/shaunpimenta/Mumbai-AQI-VS-Delegation" target="_blank">
+            View on GitHub
+        </a>
+    </div>
+</footer>
 </body>
 </html>
 """, data=data)
